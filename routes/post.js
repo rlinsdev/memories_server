@@ -4,10 +4,10 @@ import { getPosts, createPost, updatePost, deletePost, likePost } from '../contr
 
 const router = express.Router();
 
-// http://localhost:5000/posts
- router.get('/',(req,res) => {
-   res.send('Hello to Memories API!');
- })
+// // http://localhost:5000/posts
+//  router.get('/',(req,res) => {
+//    res.send('Hello to Memories API!');
+//  })
 router.get('/', getPosts);
 router.post('/', createPost);
 router.patch('/:id', updatePost);
